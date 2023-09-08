@@ -130,7 +130,6 @@
 ; --------- VOLUMENES -------
 
 ; 1 . VOLUMEN CUBO
-
 (defun volumencubo()
 (princ "dame el lado del cubo: ")
 (setq num1 (read))
@@ -139,7 +138,6 @@
 )
 
 ; 2. VOLUMEN CILINDRO
-
 (defun volumencilindro()
 (princ "dame el radio del cilindro: ")
 (setq num1 (read))
@@ -149,7 +147,6 @@
 )
 
 ; 3. VOLUMEN DEL CONO
-
 (defun volumencono()
 
 (princ "dame el radio del cono: ")
@@ -162,7 +159,6 @@
 
 
 ; 4. VOLUMEN DE UNA ESFERA
-
 (defun volumenesfera()
 
 (princ "dame el radio de la esfera: ")
@@ -171,3 +167,34 @@
 (setq resultado (/(*(*(* num1 num1 num1)3.1416)4)3))
 ; (write resultado)
 )
+
+
+; 5. VOLUMEN DE UN PRISMA
+(defun volumenprisma()
+
+(princ "dame el ancho del prisma: ")
+(setq num1 (read))
+(princ "dame la base del prisma: ")
+(setq num2 (read))
+(princ "dame la altura del prisma: ")
+(setq num3 (read))
+
+(setq resultado (*(* num1 num2)num3))
+; (write resultado)
+)
+
+; 6. VOLUMEN DE UN ORTOEDRO
+(defun volumenortoedro()
+
+(princ "dame la longitud del ortoedro: ")
+(setq num1 (read))
+(princ "dame la latitud del ortoedro: ")
+(setq num2 (read))
+(princ "dame la altura del ortoedro: ")
+(setq num3 (read))
+
+(setq resultado (*(* num1 num2)num3))
+; (write resultado)
+)
+
+; 7. VOLUMEN DE UN 
